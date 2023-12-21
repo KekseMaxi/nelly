@@ -37,7 +37,7 @@ if __name__ == "__main__":
         for filename in os.listdir(f'./{category}'):
             if filename.endswith('.py'):
                 bot.load_extension(f'{category}.{filename[:-3]}')
-
+                
 load_dotenv()
 bot.run(os.getenv("TOKEN"))
 
