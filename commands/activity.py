@@ -9,6 +9,7 @@ class Activity(commands.Cog):
 
 
     @slash_command(description="Ändere den Status beliebig")
+    @commands.has_role("Dev")
     async def activity(
             self, ctx,
             typ: Option(str, choices=["game", "stream"]),
